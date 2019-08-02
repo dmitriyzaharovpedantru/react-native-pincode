@@ -202,7 +202,7 @@ class PinCodeEnter extends React.PureComponent<IProps, IState> {
       cancelText: this.props.textCancelButtonTouchID || 'Cancel',
       fallbackLabel: 'Show Passcode',
       unifiedErrors: false,
-      passcodeFallback: true
+      passcodeFallback: false
     }
     try {
       await TouchID.authenticate(
